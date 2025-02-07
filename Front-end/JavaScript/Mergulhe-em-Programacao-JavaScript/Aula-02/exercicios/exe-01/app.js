@@ -1,4 +1,4 @@
-// Exercício 1 - Aula 1
+// Exercício 1 - Aula 2
 
 // Inclua comandos console.log em diferentes partes do código para verificar o fluxo do programa, os valores das variáveis e outras informações relevantes durante a fase de desenvolvimento.
 
