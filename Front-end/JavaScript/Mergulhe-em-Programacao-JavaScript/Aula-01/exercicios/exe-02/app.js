@@ -1,4 +1,4 @@
-// Exercício 2 - Aula 2
+// Exercício 2 - Aula 1
 
 // Crie uma mensagem no console que diga que a pessoa errou o número secreto, caso ela não acerte o número secreto.
 
