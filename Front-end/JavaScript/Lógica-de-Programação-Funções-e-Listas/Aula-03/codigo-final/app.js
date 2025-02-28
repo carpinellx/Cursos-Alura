@@ -13,8 +13,13 @@ document.querySelector('input').addEventListener('keypress', function(event) {
     }
 });
 
-exibirTextoNaTela('h1', 'Jogo do número secreto');
-exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+exibirMensagemInicial();
+
+function exibirMensagemInicial (tag, texto) {
+    exibirTextoNaTela('h1', 'Jogo do número secreto');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+}
+
 
 function verificarChute() {
     let chute = document.querySelector('input').value;
@@ -44,4 +49,12 @@ function gerarNumeroAleatorio() {
 function limparCampo() {
     let chute = document.querySelector('input');
     chute.value = '';
+}
+
+function reiniciarJogo() {
+    numeroSecreto = gerarNumeroAleatorio();
+    limparCampo();
+    tentativas = 1;
+    exibirMensagemInicial();
+    document.getElementById('reiniciar').setAttribute('disabled', true); // Desabilita o botão de reiniciar o jogo
 }
