@@ -22,7 +22,7 @@ function mediaNumeros(n1, n2, n3) {
     return (n1 + n2 + n3) / 3;
 }
 
-// 5 Criar una o maior deles.ma função que recebe dois números como parâmetros e retor 
+// 5 Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
 
 function maiorNumero(n1, n2) {
     return n1 > n2 ? n1 : n2; // Operador ternário (condição ? valor se verdadeiro : valor se falso) 
