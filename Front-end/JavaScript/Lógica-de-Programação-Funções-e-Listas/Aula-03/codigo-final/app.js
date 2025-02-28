@@ -32,9 +32,15 @@ function verificarChute() {
             exibirTextoNaTela('p', 'Dica: O número secreto é maior.');
         }
         tentativas++;
+        limparCampo();
     }
 }
 
 function gerarNumeroAleatorio() {
     return parseInt(Math.random() * 10 + 1);
+}
+
+function limparCampo() {
+    let chute = document.querySelector('input');
+    chute.value = '';
 }
